@@ -1,0 +1,76 @@
+{
+  "name": "@junhokims/eslint-plugin",
+  "version": "1.0.0",
+  "description": "junhoKim's ESLint Plugins",
+  "license": "MIT",
+  "author": {
+    "name": "junhoKims",
+    "email": "kraksin12@gmail.com"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "type": "commonjs",
+  "exports": {
+    ".": {
+      "source": "./lib/index.js",
+      "require": "./lib/index.cjs",
+      "import": "./lib/index.mjs"
+    },
+    "./package.json": "./package.json"
+  },
+  "main": "./lib/index.js",
+  "files": [
+    "index.js",
+    "src",
+    "lib"
+  ],
+  "scripts": {
+    "build": "rm -rf ./lib && nanobundle build --no-sourcemap --root-dir=./"
+  },
+  "devDependencies": {
+    "@typescript-eslint/parser": "^6.9.0",
+    "eslint": ">= 8",
+    "eslint-config-prettier": "^9.0.0",
+    "eslint-import-resolver-typescript": "^3.6.1",
+    "eslint-plugin-import": "^2.29.0",
+    "eslint-plugin-prettier": "^5.0.1",
+    "eslint-plugin-react": "^7.33.2",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "nanobundle": "^1.6.0",
+    "prettier": ">= 3",
+    "react": ">= 18"
+  },
+  "peerDependencies": {
+    "@typescript-eslint/parser": "^6.9.0",
+    "eslint": ">= 8",
+    "eslint-config-prettier": "^9.0.0",
+    "eslint-import-resolver-typescript": "^3.6.1",
+    "eslint-plugin-import": "^2.29.0",
+    "eslint-plugin-prettier": "^5.0.1",
+    "eslint-plugin-react": "^7.33.2",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "prettier": ">= 3",
+    "react": ">= 18"
+  },
+  "peerDependenciesMeta": {
+    "typescript": {
+      "optional": true
+    },
+    "@typescript-eslint/parser": {
+      "optional": true
+    },
+    "eslint-import-resolver-typescript": {
+      "optional": true
+    },
+    "react": {
+      "optional": true
+    },
+    "eslint-plugin-react": {
+      "optional": true
+    },
+    "eslint-plugin-react-hooks": {
+      "optional": true
+    }
+  }
+}
