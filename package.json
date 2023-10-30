@@ -1,0 +1,29 @@
+{
+  "name": "configs",
+  "version": "1.0.0",
+  "description": "My Configs",
+  "author": {
+    "name": "junhoKims",
+    "email": "kraksin12@gmail.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/junhoKims/configs"
+  },
+  "license": "MIT",
+  "main": "index.js",
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "devDependencies": {
+    "eslint": ">= 8",
+    "prettier": ">= 3"
+  },
+  "peerDependencies": {
+    "eslint": ">= 8",
+    "prettier": ">= 3"
+  }
+}
