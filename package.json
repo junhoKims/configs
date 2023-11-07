@@ -1,5 +1,6 @@
 {
   "name": "@junhokims/configs",
+  "private": true,
   "version": "1.0.0",
   "description": "junhoKim's Configs",
   "author": {
@@ -11,7 +12,13 @@
     "url": "https://github.com/junhoKims/configs.git"
   },
   "license": "MIT",
+  "workspaces": {
+    "packages": [
+      "packages/*"
+    ]
+  },
   "publishConfig": {
     "access": "public"
-  }
+  },
+  "packageManager": "yarn@4.0.1"
 }

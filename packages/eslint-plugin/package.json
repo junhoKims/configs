@@ -1,5 +1,5 @@
 {
-  "name": "@junhokims/eslint-plugin",
+  "name": "eslint-plugin-pack",
   "version": "1.0.0",
   "description": "junhoKim's ESLint Plugins",
   "license": "MIT",
@@ -28,23 +28,20 @@
   "scripts": {
     "build": "rm -rf ./lib && nanobundle build --no-sourcemap --root-dir=./"
   },
-  "dependencies": {
-    "@typescript-eslint/eslint-plugin": "^6.9.1",
-    "@typescript-eslint/parser": "^6.9.0",
+  "devDependencies": {
+    "eslint": "^8.0.0",
     "eslint-config-prettier": "^9.0.0",
-    "eslint-import-resolver-typescript": "^3.6.1",
     "eslint-plugin-import": "^2.29.0",
     "eslint-plugin-prettier": "^5.0.1",
     "eslint-plugin-react": "^7.33.2",
-    "eslint-plugin-react-hooks": "^4.6.0"
-  },
-  "devDependencies": {
-    "eslint": "^8.51.0",
+    "eslint-plugin-react-hooks": "^4.6.0",
     "nanobundle": "^1.6.0",
-    "prettier": "^3.0.3"
+    "prettier": "^3.0.0",
+    "typescript": "^5.0.0"
   },
   "peerDependencies": {
-    "eslint": "^8.51.0",
-    "prettier": "^3.0.3"
+    "eslint": "^8.0.0",
+    "prettier": "^3.0.0",
+    "typescript": "^5.0.0"
   }
 }
